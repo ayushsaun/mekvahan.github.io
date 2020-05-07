@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="E-mail verification page for mekvahan">
+    <meta name="keywords" content="MekVahan , Email-page">
+    <meta name="author" content="Ayush Saun">
+    <meta name="viewport" content="width = device-width , initial-scale=1">
+    <style>
+        @font-face {
+            font-family: "Gotham1";
+            src: url("Gotham-Book.otf");
+        }
+        @font-face {
+            font-family: "Gotham2";
+            src: url("Gotham-Medium.otf");
+        }
+
+        @media screen and (max-width: 780px){
+            /* for header table */
+            body {
+                width: 768px;
+            }
+            .logo {
+                height: 80px;
+                width: 80px;
+            }
+            .mekvahan {
+                font-size: 50px !important;
+            }
+            .sideline {
+                font-size: 20px !important;
+                margin-left: 70px !important;
+                margin-top: -10px !important;
+            }
+
+            /* for middle table */
+            .welcome {
+                font-size: 30px;
+            }
+            .sideline2 {
+                font-size: 15px;
+                width: 450px !important;
+            }
+            main > table {
+                height: 768px;
+            }
+            .verify {
+                font-size: 30px;
+            }
+            .dear {
+                font-size: 25px;
+            }
+            .para {
+                font-size: 15px;
+            }
+
+            /* for bottom table */
+            .bottom1 {
+                font-size: 18px !important;
+                text-align: center;
+            }
+            .bottom2 {
+                width: 100% !important;
+            }
+            .bottom2W {
+                width: 320px !important;
+            }
+            .google {
+                height: 50px !important;
+                width: 120px !important;
+                margin-left: 125px !important;
+            }
+            .socialmedia {
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        @media screen and (max-width: 620px){
+            /* for header table */
+            body {
+                width: 600px;
+            }
+            .logo {
+                height: 80px;
+                width: 80px;
+            }
+            .mekvahan {
+                font-size: 50px !important;
+            }
+            .sideline {
+                font-size: 20px !important;
+                margin-left: 70px !important;
+                margin-top: -10px !important;
+            }
+
+            /* for middle table */
+            .welcome {
+                font-size: 30px;
+            }
+            .sideline2 {
+                font-size: 15px;
+                width: 450px !important;
+            }
+            main > table {
+                height: 683px;
+            }
+            .verify {
+                font-size: 30px;
+            }
+            .dear {
+                font-size: 25px;
+            }
+            .para {
+                font-size: 15px;
+            }
+
+            /* for bottom table */
+            .bottom1 {
+                font-size: 18px !important;
+                text-align: center;
+            }
+            .bottom2 {
+                width: 100% !important;
+            }
+            .bottom2W {
+                width: 320px !important;
+            }
+            .google {
+                height: 50px !important;
+                width: 120px !important;
+                margin-left: 125px !important;
+            }
+            .socialmedia {
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        @media screen and (min-width: 410px) and (max-width: 480px) {
+            /* for header table */
+            body {
+                width: 550px;
+            }
+            .logo {
+                height: 80px;
+                width: 80px;
+            }
+            .mekvahan {
+                font-size: 50px !important;
+            }
+            .sideline {
+                font-size: 20px !important;
+                margin-left: 70px !important;
+                margin-top: -10px !important;
+            }
+
+            /* for middle table */
+            .welcome {
+                font-size: 30px;
+            }
+            .sideline2 {
+                font-size: 15px;
+                width: 450px !important;
+            }
+            main > table {
+                height: 700px;
+            }
+            .verify {
+                font-size: 30px;
+            }
+            .dear {
+                font-size: 25px;
+            }
+            .para {
+                font-size: 15px;
+            }
+
+            /* for bottom table */
+            .bottom1 {
+                font-size: 18px !important;
+                text-align: center;
+            }
+            .bottom2 {
+                width: 100% !important;
+            }
+            .bottom2W {
+                width: 320px !important;
+            }
+            .google {
+                height: 50px !important;
+                width: 120px !important;
+                margin-left: 125px !important;
+            }
+            .socialmedia {
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 385px) {
+            /* for header table */
+            body {
+                width: 550px;
+            }
+            .logo {
+                height: 80px;
+                width: 80px;
+            }
+            .mekvahan {
+                font-size: 50px !important;
+            }
+            .sideline {
+                font-size: 20px !important;
+                margin-left: 70px !important;
+                margin-top: -10px !important;
+            }
+
+            /* for middle table */
+            .welcome {
+                font-size: 30px;
+            }
+            .sideline2 {
+                font-size: 15px;
+                width: 450px !important;
+            }
+            main > table {
+                height: 700px;
+            }
+            .verify {
+                font-size: 30px;
+            }
+            .dear {
+                font-size: 25px;
+            }
+            .para {
+                font-size: 15px;
+            }
+
+            /* for bottom table */
+            .bottom1 {
+                font-size: 18px !important;
+                text-align: center;
+            }
+            .bottom2 {
+                width: 100% !important;
+            }
+            .bottom2W {
+                width: 320px !important;
+            }
+            .google {
+                height: 50px !important;
+                width: 120px !important;
+                margin-left: 125px !important;
+            }
+            .socialmedia {
+                height: 30px;
+                width: 30px;
+            }
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body style="margin: 0px;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td style="font-family: Gotham1">
+                <!heading part of the page>
+                <header>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody bgcolor="#d0d0d0">
+                        <tr style="display: inline-block;position: absolute">
+                            <td>
+                                <img class="logo" src="Asset%201xxhdpi.png" height="110px" width="110px" style="margin-left: 20px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h1 class="mekvahan" style="text-align: center;font-size: 70px;margin: 0px;margin-top: 5px;color: #ff0000ad;">
+                                    MEKVAHAN
+                                </h1>
+                                <h3 class="sideline" style="text-align: center;font-size: 30px;margin: 0px;margin-top: -15px;margin-left: 100px">
+                                    Always cares ur vahan
+                                </h3>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </header>
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td style="font-family: Gotham1">
+                <! middle part of entire page>
+                <main>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody bgcolor="#d0d0d0" style="text-align: center">
+                        <tr>
+                            <td style="font-size: 40px;color: #0000ff96">
+                                <p class="welcome" style="margin-bottom: 0px">  Welcome to Mekvahan!  </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 19px;color: gray">
+                                <p class="sideline2" style="margin-top: 0px;margin: auto;width: 550px;border-top: 1.5px solid;">
+                                    We know the language of machines! Machines talk to us.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 34px;">
+                                <p class="verify" style="margin-top: 60px;color: red;font-family: Gotham2">
+                                    VERIFY ACCOUNT
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 27px;font-family: Gotham2">
+                                <p class="dear" style="color: saddlebrown;margin: 0px;margin-bottom: 30px">
+                                    <b style="color: black">
+                                        Dear
+                                    </b>
+                                        Abhijeet Kumar,
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 30px;font-family: Gotham2">
+                                <p class="para">Hope you are having a great time with Mekvahan</p>
+                                <p class="para">To complete your account verification, please press the button below.</p>
+                                <p class="para">Thankfully,</p>
+                                <p class="para">Team Mekvahan</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <button style="height: 60px;width: 190px;border-radius: 15px;color: white;background-color: red;font-size: 20px;box-shadow: 6px 6px 12px 1px black;border: none;margin-bottom: 90px;margin-top: 10px">
+                                        Confirm email
+                                    </button>
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </main>
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td bgcolor="#d0d0d0" style="font-family: Gotham2">
+                <! footer of page>
+                <footer>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top: 1.5px solid #0000004d;;width: 90%;margin: auto;margin-bottom: 30px;">
+                        <tbody>
+
+
+
+                        <tr style="display: inline-block;margin-top: 5px;">
+                            <td class="bottom1" style="width: 100px;padding: 10px;font-size: 21px;">
+                                <a href="#" style="text-decoration: none;color: saddlebrown;">
+                                    <p>
+                                        About us
+                                    </p>
+                                </a>
+                            </td>
+                            <td class="bottom1" style="width: 160px;padding: 10px;font-size: 21px;">
+                                <a href="#" style="text-decoration: none;color: saddlebrown;">
+                                    <p>
+                                        Privacy policy
+                                    </p>
+                                </a>
+                            </td>
+                            <td class="bottom1" style="width: 210px;padding: 10px;font-size: 21px;">
+                                <a href="#" style="text-decoration: none;color: saddlebrown;">
+                                    <p>
+                                        Terms & Conditions
+                                    </p>
+                                </a>
+                            </td>
+
+                        </tr>
+
+                        <tr class="bottom2" style="display: inline-block;width: 52%;float: right;">
+
+                            <td class="bottom2W" style="font-size: 21px;width: 400px;" >
+                                <p class="bottom1" style="position: absolute">
+                                    Available on:
+                                </p>
+                                <img class="google" src="Asset%203xxhdpi.png" style="height: 55px;width: 150px;margin-left: 160px">
+                            </td>
+
+                            <td style="font-size: 21px">
+                                <p class="bottom1" style="margin-bottom: 0px">Stay Connected</p>
+                                <img class="socialmedia" src="Asset%204xxhdpi.png" height="40px" width="40px" style="margin: 6px">
+                                <img class="socialmedia" src="Asset%205xxhdpi.png" height="40px" width="40px" style="margin: 6px">
+                                <img class="socialmedia" src="Asset%206xxhdpi.png" height="40px" width="40px" style="margin: 6px">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </footer>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
